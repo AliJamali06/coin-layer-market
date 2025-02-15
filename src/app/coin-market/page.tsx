@@ -5,7 +5,7 @@ export default function CoinMarket() {
   const [data, setData] = useState<Record<string, number> | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const selectedCoins = ["BTC", "BNB", "SHIB", "ETH", "XRP", "LTC", "SOL", "DOGE", "ADA", "DOT", "BNX", "SUI", "CAKE"];
+  const selectedCoins = ["BTC", "BNB", "ETH", "XRP", "LTC", "SOL", "DOGE", "ADA"];
 
   useEffect(() => {
     const API_KEY = process.env.NEXT_PUBLIC_COINLAYER_KEY;
